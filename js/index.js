@@ -26,12 +26,12 @@ function onDeviceReady() {
 	
     
     //following allows you to gain access to the supported platform specific locations that are shared by all applications (useful for stioring images, music etc. )
-    window.resolveLocalFileSystemURL(cordova.file.externalDataDirectory, gotFS, fail);
+    window.resolveLocalFileSystemURL(cordova.file.syncedDataDirectory, gotFS, fail);
 }
 
 //get access to file and CREATE if does not exists
 function gotFS(fileSystem) {
-alert("hey")
+
  	fileSystem.getFile("test.txt", {create: true, exclusive: false}, gotFileEntry, fail);
 }
 
@@ -72,7 +72,7 @@ function readAsText(file) {
 //UDPATE file contents - called when submit button is pressed
 function writeFile()
 {
-    console.log("writeFile: "  + fileEntry.fullPath);
+   console.log("writeFile: "  + fileEntry.fullPath);
     
     filetext = $('#textarea').val();
     
