@@ -31,7 +31,7 @@ function onDeviceReady() {
 
 //get access to file and CREATE if does not exists
 function gotFS(fileSystem) {
-
+alert("GOT FS");
  	fileSystem.getFile("test.txt", {create: true, exclusive: false}, gotFileEntry, fail);
 }
 
