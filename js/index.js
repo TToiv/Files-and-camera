@@ -28,12 +28,12 @@ function onDeviceReady() {
     //following allows you to gain access to the supported platform specific locations that are shared by all applications (useful for stioring images, music etc. )
     window.resolveLocalFileSystemURL(cordova.file.externalDataDirectory, gotFS, fail);
 }
-
+alert("hey pleb")
 //get access to file and CREATE if does not exists
 function gotFS(fileSystem) {
     
  	fileSystem.getFile("test.txt", {create: true, exclusive: false}, gotFileEntry, fail);
-alert("gotFile")}
+}
 
 //get file entry
 function gotFileEntry(fileEntry) {
