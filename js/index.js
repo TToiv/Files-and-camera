@@ -22,7 +22,7 @@ function onPageCreated() {
 }
 
 function onDeviceReady() {
-	console.log("device ready");
+	alert("device ready");
 	
     
     //following allows you to gain access to the supported platform specific locations that are shared by all applications (useful for stioring images, music etc. )
@@ -37,7 +37,7 @@ function gotFS(fileSystem) {
 
 //get file entry
 function gotFileEntry(fileEntry) {
-	alert("got file entry");
+	console.log("got file entry");
 	this.fileEntry = fileEntry
 	fileEntry.file(gotFile, fail);
 }
