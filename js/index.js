@@ -72,7 +72,7 @@ function readAsText(file) {
 //UDPATE file contents - called when submit button is pressed
 function writeFile()
 {
-   // console.log("writeFile: "  + );
+
    console.log("writeFile: "  + fileEntry.fullPath);
     
     filetext = $('#textarea').val();
