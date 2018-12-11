@@ -44,7 +44,7 @@ function gotFileEntry(fileEntry) {
 
 //get file itself
 function gotFile(file){
-    console.log("got file");
+    alert("got file");
 	readAsText(file);
 }
 
