@@ -73,7 +73,7 @@ function readAsText(file) {
 function writeFile()
 {
     console.log("writeFile: "  + );
-   console.log("writeFile: "  + fileEntry.fullPath);
+/*   console.log("writeFile: "  + fileEntry.fullPath);
     
     filetext = $('#textarea').val();
     
@@ -82,7 +82,7 @@ function writeFile()
 			writer.write(filetext);
 		}, 
 		fail
-	);
+	);*/
 }
 
 
