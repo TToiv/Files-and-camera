@@ -17,6 +17,7 @@
         C.Bowers
     </author>
 	
+         <plugin name="cordova-plugin-file"/>
         
     <preference name="AndroidPersistentFileLocation" value="Internal" />
     <preference name="iosPersistentFileLocation" value="Library" />
